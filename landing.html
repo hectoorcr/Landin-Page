@@ -8,37 +8,101 @@
   <meta name="keywords" content="Nutrii-Fit, nutrición, fitness, entrenamiento, calorías, app de fitness">
   <link rel="icon" href="favicon.ico">
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
-    header { background: #00b894; color: white; padding: 50px 20px; }
-    h1 { margin: 0 0 10px; }
-    p { font-size: 18px; }
-    .btn { display: inline-block; padding: 15px 30px; background: #0984e3; color: white; text-decoration: none; font-weight: bold; border-radius: 8px; margin-top: 20px; }
-    .benefits { display: flex; justify-content: center; margin: 50px 0; gap: 20px; flex-wrap: wrap; }
-    .benefit { background: #dfe6e9; padding: 20px; border-radius: 10px; width: 200px; }
+    /* Reset y estilo base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #00b894, #0984e3);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 3em; margin-bottom: 20px; }
+    header p { font-size: 1.3em; margin-bottom: 30px; }
+
+    /* Botón CTA */
+    .btn {
+      display: inline-block;
+      padding: 20px 40px;
+      background: #fdcb6e;
+      color: #2d3436;
+      font-weight: bold;
+      font-size: 1.2em;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e17055;
+      color: white;
+    }
+
+    /* Beneficios */
+    .benefits {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 50px 20px;
+      background: #f1f2f6;
+    }
+    .benefit {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 15px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .benefit:hover { transform: translateY(-10px); }
+    .benefit h2 { margin-bottom: 15px; font-size: 1.4em; }
+    .benefit p { font-size: 1em; color: #555; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #2d3436;
+      color: #dfe6e9;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2em; }
+      .benefits { flex-direction: column; align-items: center; }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Nutrii-Fit</h1>
-  <p>Escanea tus comidas, controla tus calorías y recibe planes de entrenamiento personalizados.</p>
-  <a class="btn" href="https://app--nutrii-fit-a9ecab01.base44.app" target="_blank">Abrir la app</a>
-</header>
+  <header>
+    <h1>Nutrii-Fit</h1>
+    <p>Escanea tus comidas, controla tus calorías y recibe planes de entrenamiento personalizados.</p>
+    <a class="btn" href="https://app--nutrii-fit-a9ecab01.base44.app" target="_blank">Abrir la app</a>
+  </header>
 
-<section class="benefits">
-  <div class="benefit">
-    <h2>📷 Escaneo de comidas</h2>
-    <p>Usa foto, voz o texto para registrar tus alimentos.</p>
-  </div>
-  <div class="benefit">
-    <h2>🏋️ Planes personalizados</h2>
-    <p>Rutinas y nutrición adaptadas a tus objetivos.</p>
-  </div>
-  <div class="benefit">
-    <h2>📅 Calendario de progreso</h2>
-    <p>Registra entrenamientos y fotos de tu evolución.</p>
-  </div>
-</section>
+  <section class="benefits">
+    <div class="benefit">
+      <h2>📷 Escaneo de comidas</h2>
+      <p>Registra tus alimentos usando foto, voz o texto de forma sencilla.</p>
+    </div>
+    <div class="benefit">
+      <h2>🏋️ Planes personalizados</h2>
+      <p>Rutinas y planes de nutrición adaptados a tus objetivos y nivel.</p>
+    </div>
+    <div class="benefit">
+      <h2>📅 Calendario de progreso</h2>
+      <p>Lleva un seguimiento diario de tus entrenamientos y avances.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Nutrii-Fit. Todos los derechos reservados.
+  </footer>
 
 </body>
 </html>
+
